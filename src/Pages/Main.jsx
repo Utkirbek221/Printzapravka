@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import epson from '../IMG/epson.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -47,18 +48,22 @@ export default function Main() {
             <div 
               className='flex max-md:justify-center max-md:items-center max-lg:justify-center max-lg:items-center gap-4 sm:gap-4 mb-[24px]' 
             > 
+            <Link to={'/register'}>
               <button 
                 data-aos="fade-right" 
-                className='rounded-[8px] text-white hover:bg-[#7275f5] transition-colors duration-300 font-bold text-[15px] bg-[#818CF8] w-[192px] h-[52px] max-md:w-[163px] max-md:h-[46px]  '
+                className='rounded-[8px] text-white hover:bg-[#7275f5] transition-colors duration-300 font-bold text-[15px] bg-[#818CF8] w-[192px] h-[52px] max-md:w-[143px] max-md:min-h-[46px]'
               >
                 Заказать ремонт
               </button>
+            </Link>
+            <Link to={'/about'}>            
               <button 
                 data-aos="fade-left"  
-                className='rounded-[8px] text-[#A5B4FC] hover:bg-[#818CF8] hover:text-white transition-colors duration-300 font-bold text-[15px] bg-transparent border-2 border-[#818CF8] w-[192px] h-[52px] max-md:w-[163px] max-md:h-[46px]  '
+                className='rounded-[8px] text-[#A5B4FC] hover:bg-[#818CF8] hover:text-white transition-colors duration-300 font-bold text-[15px] bg-transparent border-2 border-[#818CF8] w-[192px] h-[52px] max-md:w-[143px] max-md:min-h-[46px]'
               >
                 Заказать заправку
               </button>
+            </Link>
             </div>
           </div>
           <div 

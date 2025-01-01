@@ -2,10 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function AboutMain() {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
     return (
-        <div className='min-h-[500px] md:min-h-[700px] lg:min-h-[864px] flex justify-center items-center' style={{ background: 'linear-gradient(180deg, #EFF6FF 0%, #BFDBFE 100%)' }}>
+        <div className='min-h-[500px] md:min-h-[700px] lg:min-h-[864px] flex justify-center items-center ' style={{ background: 'linear-gradient(180deg, #EFF6FF 0%, #BFDBFE 100%)' }}>
             <div className='container'>
-                <div className='group bg-white rounded-3xl shadow-lg py-[24px] md:py-[36px] lg:py-[48px] px-[20px] md:px-[60px] lg:px-[130px] transition-all duration-300 hover:scale-[1.06] mx-4'>
+                <div className='max-lg:mt-[50px] max-lg:mb-[50px] max-md:mt-[50px] max-md:mb-[50px] group bg-white rounded-3xl shadow-lg py-[24px] md:py-[36px] lg:py-[48px] px-[20px] md:px-[60px] lg:px-[130px] transition-all duration-300 hover:scale-[1.06] mx-4'>
                     {/* О нас */}
                     <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4 md:mb-6 lg:mb-8'>О нас</h1>
                     <hr className='max-w-[755px] h-[2px] mx-auto mb-4 md:mb-6 lg:mb-8' style={{ background: 'linear-gradient(90deg, #14B8A6 0%, #2563EB 100%)' }} />
@@ -23,7 +26,7 @@ export default function AboutMain() {
 
                     {/* Узнать больше кнопка */}
                     <div className='flex justify-center'>
-                        <Link to={'/about'}>
+                        <Link to={'/about'} onClick={scrollToTop}>
                             <button data-aos="fade-left" className='px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 text-[#2563EB] border border-[#2563EB] rounded-lg hover:bg-[#2563EB] hover:text-white transition-colors duration-300 text-sm md:text-base'>
                                 Узнать больше
                             </button>

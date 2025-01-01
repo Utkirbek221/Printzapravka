@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function About() {
+  
   return (
     <div className='min-h-[710px] bg-gradient-to-r from-[#1B2838] to-[#2A3F54] py-20'>
       <div className='container mx-auto px-5'>

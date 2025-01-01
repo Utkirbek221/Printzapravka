@@ -7,15 +7,13 @@ import { useEffect } from 'react';
 import About from "./Components/About";
 import OurServices from "./Components/OurServices";
 import Registor from "./Components/Registor";
+import Brands from "./Components/Brands";
 
-function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-out'
-    });
-  }, []);
+
+  const App = () => {
+    useEffect(() => {
+      AOS.refresh();
+    }, []);
 
   const router = createBrowserRouter([
     {
@@ -38,6 +36,10 @@ function App() {
         {
           path: "/register",
           element: <Registor/>,
+        },
+        {
+          path: "/brands",
+          element: <Brands/>,
         },
 
       ]
