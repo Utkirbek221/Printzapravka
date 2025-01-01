@@ -12,15 +12,14 @@ import Nimadur from '../Components/Nimadur'
 export default function Home() {
   return (
     <>
-      {/* <Main />
+      <Main />
       <WeCan/>
       <AboutMain/>
       <Plotter/>
       <Info/>
       <Advantage/>
       <Registor/>
-      <Review/> */}
-      <Nimadur/>
+      <Review/>
     </>
   )
 }
