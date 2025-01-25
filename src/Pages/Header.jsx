@@ -52,7 +52,6 @@ export default function Header() {
                   <FiX className={`absolute transition-all duration-300 ${isOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-180'}`} />
                 </div>
               </div>
-              {/* Mobile Menu */}
               <div ref={menuRef} className={`md:hidden fixed top-[80px] right-0 w-[250px] h-screen bg-gradient-to-r from-[#1B2838] to-[#2A3F54] transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <ul className='flex flex-col gap-5 text-[#D4D4D8] p-5'>
                   <Link to={'/'} onClick={() => { setIsOpen(false); scrollToTop(); }} className='hover:text-[#6366F1]'>Главная</Link>
