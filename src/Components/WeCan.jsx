@@ -1,7 +1,7 @@
 import React from 'react'
 import mono from '../IMG/imgUsta.jpeg'
 import struyni from '../IMG/imgUsta2.jpeg'
-import contact from '../IMG/imgUsta3.jpeg'
+import contact from '../IMG/imgUsta3.jpg'
 import lazer from '../IMG/imgUsta4.png'
 import cartridge from '../IMG/imgUsta5.jpeg'
 

@@ -7,7 +7,6 @@ import Info from '../Components/Info'
 import Advantage from '../Components/Advantage'
 import Registor from '../Components/Registor'
 import Review from '../Components/Review'
-import Nimadur from '../Components/Nimadur'
 
 export default function Home() {
   return (

@@ -4,8 +4,8 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import person1 from '../IMG/imgperson.jpeg'
-import person2 from '../IMG/imgperson.jpeg'
-import person3 from '../IMG/imgperson.jpeg'
+import person2 from '../IMG/imgperson2.webp'
+import person3 from '../IMG/imgperson3.webp'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const reviews = [
